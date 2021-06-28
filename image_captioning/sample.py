@@ -29,7 +29,7 @@ def get_prediction(image_path):
                              (0.229, 0.224, 0.225))])
     
     # Load vocabulary wrapper
-    with open(args.vocab_path, 'rb') as f:
+    with open("data/vocab.pkl", 'rb') as f:
         vocab = pickle.load(f)
 
     # Build models
