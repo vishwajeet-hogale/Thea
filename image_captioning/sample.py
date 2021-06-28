@@ -39,8 +39,8 @@ def get_prediction(image_path):
     decoder = decoder.to(device)
 
     # Load the trained model parameters
-    encoder.load_state_dict(torch.load("encoder-5-3000.pkl"))
-    decoder.load_state_dict(torch.load("decoder-5-3000.pkl"))
+    encoder.load_state_dict(torch.load("models/encoder-5-3000.pkl"))
+    decoder.load_state_dict(torch.load("models/decoder-5-3000.pkl"))
 
     # Prepare an image
     image = load_image(image_path, transform)
